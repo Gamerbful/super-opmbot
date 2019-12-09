@@ -92,6 +92,7 @@ client.on("message", function(message) {
 
 client.on("message", function(message) {
   if(message.content.startsWith("refresh")){
+      message.channel.send("refresh effectué");
     answer=['A','B'];
     };
 
