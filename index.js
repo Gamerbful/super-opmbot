@@ -91,5 +91,5 @@ client.on("message", function(message) {
 // if after answer we have the good answer then find(x) is true and a message is send.
 
 
-client.login('NTg3NjgxNTk2MzY3MzA2Nzgy.XeP-Ig.h9q1ZfKKa_6NQJ0e1YHProxGjBU');
+client.login(process.env.BOT_TOKEN);
 // log the bot
