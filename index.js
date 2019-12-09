@@ -6,7 +6,7 @@ var answer = ['A','B']; // Answers List for the game
 
 client.on("message", function(message) {
     if(message.content === "ping") {
-        message.channel.send("pong");
+        message.channel.send("ponssssg");
 
     }
 });
