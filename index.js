@@ -90,6 +90,12 @@ client.on("message", function(message) {
 // on message lauch funtion if message starts with answer, then cut the message and only take the part after 'answer_'
 // if after answer we have the good answer then find(x) is true and a message is send.
 
+client.on("message", function(message) {
+  if(message.content.startsWith("refresh")){
+    answer=['A','B'];
+    };
 
+
+  })
 client.login(process.env.BOT_TOKEN);
 // log the bot
