@@ -59,7 +59,7 @@ function find(x){
 // find function is made to return true if and only if that's the correct answer of the question , if that's correct remove the answer
 
 client.on("message", function(message) {
-    if(message.content === "jeu" && message.member.roles.find(r => r.name === "Vip")) {
+    if(message.content === "jeu" && message.member.roles.find(r => r.name === "Admin")) {
         message.channel.send("Le jeu commence").then(async function(msg){
           var i = 36;
           while(i!=1000 && answer[0]!==undefined){
