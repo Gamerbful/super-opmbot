@@ -50,11 +50,16 @@ return codeChiffre;
 
 function find(x){
       console.log(x);
+      let trouve=false;
       answer[0].forEach(function(currentvalue){
           if (currentvalue==x){
             answer.splice(0, 1);
-            return true;}
+            console.log(answer);
+            trouve=true;}
       });
+      if (trouve==true){
+        return true;
+      }
   }
 
 // find function is made to return true if and only if that's the correct answer of the question , if that's correct remove the answer
@@ -63,12 +68,12 @@ client.on("message", function(message) {
     if(message.content === "jeu" && message.member.roles.find(r => r.name === "Admin")) {
         message.channel.send("Le jeu commence").then(async function(msg){
           var i = 36;
-          while(i!=1000 && answer[0]!==undefined){
-          await sleep(5000);
+          while(i!=5000 && answer[0]!==undefined){
+          await sleep(60000);
           msg.edit(trans(i));
           i+=1;
 
-        }});    
+        }message.channel.send("@everyone Vous avez gagné "+jeu(i-1)+" kamas :trophy: :trophy:")});
     }
 });
 
@@ -94,7 +99,7 @@ client.on("message", function(message) {
 client.on("message", function(message) {
   if(message.content.startsWith("refresh")){
       message.channel.send("raffraîchissement effectué");
-    answer=['Peugeot','Ferrari'];
+    answer=[['1721120185','1 7 2 1 1 2 0 1 8 5','17 21 1 20 18 5'],['QUATRE','quatre']];
     };
 
 
