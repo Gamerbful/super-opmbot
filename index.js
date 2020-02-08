@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client(); // Procedure of creation of a new Discord Client from Discord class / Client class
 
-var answer = ['1721120185','1 7 2 1 1 2 0 1 8 5','17 21 1 20 18 5'],['QUATRE','quatre']]; // Answers List for the game
+var answer = [['1721120185','1 7 2 1 1 2 0 1 8 5','17 21 1 20 18 5'],['QUATRE','quatre']]; // Answers List for the game
 
 
 client.on("message", function(message) {
